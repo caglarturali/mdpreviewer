@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono');
+
+.App {
+  font-family: 'Ubuntu', sans-serif;
+  height: 100vh;
+  width: 100vw;
+}
+
+.section {
+  height: 100%;
+  position: fixed;
+  width: 50%;
+}
+
+#editor-wrapper {
+  left: 0;
+  top: 0;
+}
+
+#editor {
+  border: none;
+  border-right: 1px dashed #4f5697;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 1em;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+#preview-wrapper {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  right: 0;
+  top: 0;
+}
+
+#preview {
+  padding: 20px;
+}
+
+code {
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+.toolbar {
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.toolbar.editor-title {
+  background: #5c258d; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4389a2, #4f5697); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4389a2,
+    #4f5697
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.toolbar.preview-title {
+  background: #5c258d; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4f5697, #5c258d); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4f5697,
+    #5c258d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.toolbar__title {
+  color: ghostwhite;
+  font-size: 1.2em;
+}
+
+/* Customize the scrollbar */
+*::-webkit-scrollbar {
+  width: 8px;
+  background-color: #f5f5f5;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+}
+*::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
